@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My Personal Portfolio" />
+    <title>My Portfolio</title>
+
+    <!-- Favicon (place your icon in assets/icons/) -->
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">
+          <span class="logo-text">Port<span class="accent">folio</span></span>
+        </a>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home"    class="nav-link">Home</a></li>
+          <li><a href="#about"   class="nav-link">About</a></li>
+          <li><a href="#skills"  class="nav-link">Skills</a></li>
+          <li><a href="#projects"class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <!-- Dark / Light Mode Toggle -->
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+            <i class="fas fa-moon" id="theme-icon"></i>
+          </button>
+
+          <!-- Hamburger Menu -->
+          <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+      <div class="hero-container">
+        <div class="hero-text">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">Saurabh Tiwari</h1>
+          <h2 class="hero-title">
+            I'm a <span class="typed-text" id="typed-text"></span><span class="cursor">|</span>
+          </h2>
+          <p class="hero-description">
+            A passionate developer crafting beautiful and functional web
+            experiences. I turn ideas into clean, scalable, and modern
+            solutions.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="assets/resume/Saurabh Resume.pdf" class="btn btn-secondary" target="_blank">
+              <i class="fas fa-download"></i> Download CV
+            </a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/techsaurabh08"    target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/techsaurabh0018/"  target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/Tiwari0018?t=nM_llh0DZd4U7Od8P63IKA&s=08"   target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:techsaurabh08@gmail.com"  aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="image-wrapper">
+            <!-- Place your photo in assets/images/profile.jpg -->
+            <img src="assets/images/saurabh new image.png" alt="Profile Photo" />
+          </div>
+          <!-- Floating Badges -->
+          <div class="badge badge-1"><i class="fas fa-code"></i> Clean Code</div>
+          <div class="badge badge-2"><i class="fas fa-mobile-alt"></i> Responsive</div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Arrow -->
+      <a href="#about" class="scroll-down" aria-label="Scroll Down">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About <span class="accent">Me</span></h2>
+          <p class="section-subtitle">A little bit about who I am</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-image">
+            <div class="about-img-wrapper">
+              <img src="assets/images/saurabh new image.png" alt="About Me" />
+            </div>
+          </div>
+
+          <div class="about-content">
+            <h3>Who am I?</h3>
+            <p>
+              I'm a passionate <strong>Frontend Developer</strong> with a
+              love for building modern, efficient, and user-friendly web
+              applications. I enjoy solving complex problems and learning new
+              technologies.
+            </p>
+            <p>
+              When I'm not coding, you'll find me exploring design trends,
+              contributing to open source, or enjoying a good cup of coffee
+              ☕.
+            </p>
+
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-number" data-target="5">0</span>+
+                <span class="stat-label">Projects Done</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number" data-target="15">0</span>+
+                <span class="stat-label">Happy Clients</span>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn-primary">Let's Talk</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My <span class="accent">Skills</span></h2>
+          <p class="section-subtitle">Technologies I work with</p>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Skill Card -->
+          <div class="skill-card" data-aos="fade-up">
+            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+            <h4>HTML5</h4>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="95"></div>
+            </div>
+            <span class="skill-percent">95%</span>
+          </div>
+
+          <div class="skill-card" data-aos="fade-up">
+            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+            <h4>CSS3</h4>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="90"></div>
+            </div>
+            <span class="skill-percent">90%</span>
+          </div>
+
+          <div class="skill-card" data-aos="fade-up">
+            <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+            <h4>JavaScript</h4>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="85"></div>
+            </div>
+            <span class="skill-percent">85%</span>
+          </div>
+
+          <div class="skill-card" data-aos="fade-up">
+            <div class="skill-icon"><i class="fab fa-react"></i></div>
+            <h4>React</h4>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="80"></div>
+            </div>
+            <span class="skill-percent">80%</span>
+          </div>
+
+          <div class="skill-card" data-aos="fade-up">
+            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+            <h4>Node.js</h4>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="75"></div>
+            </div>
+            <span class="skill-percent">75%</span>
+          </div>
+
+          <div class="skill-card" data-aos="fade-up">
+            <div class="skill-icon"><i class="fas fa-database"></i></div>
+            <h4>MongoDB</h4>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="70"></div>
+            </div>
+            <span class="skill-percent">70%</span>
+          </div>
+
+         
+
+          <div class="skill-card" data-aos="fade-up">
+            <div class="skill-icon"><i class="fab fa-github"></i></div>
+            <h4>GitHub</h4>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="72"></div>
+            </div>
+            <span class="skill-percent">85%</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My <span class="accent">Projects</span></h2>
+          <p class="section-subtitle">Some things I have built</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- Project Card 1 -->
+          <div class="project-card" data-category="frontend">
+            <div class="project-img">
+              <img src="assets/images/project1.jpg" alt="Project 1" />
+              <div class="project-overlay">
+                <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Frontend</span>
+              <h3>E-Commerce UI</h3>
+              <p>A fully responsive e-commerce interface built with HTML, CSS, and JavaScript.</p>
+              <div class="project-tech">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="project-card" data-category="fullstack">
+            <div class="project-img">
+              <img src="assets/images/project2.jpg" alt="Project 2" />
+              <div class="project-overlay">
+                <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Full Stack</span>
+              <h3>Task Manager App</h3>
+              <p>A full-stack task management app with authentication and real-time updates.</p>
+              <div class="project-tech">
+                <span>React</span><span>Node.js</span><span>MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="project-card" data-category="design">
+            <div class="project-img">
+              <img src="assets/images/project3.jpg" alt="Project 3" />
+              <div class="project-overlay">
+                <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Design</span>
+              <h3>Travel App UI</h3>
+              <p>A sleek travel app UI design created in Figma and translated to code.</p>
+              <div class="project-tech">
+                <span>Figma</span><span>HTML</span><span>CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 4 -->
+          <div class="project-card" data-category="frontend">
+            <div class="project-img">
+              <img src="assets/images/project4.jpg" alt="Project 4" />
+              <div class="project-overlay">
+                <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Frontend</span>
+              <h3>Weather Dashboard</h3>
+              <p>A weather app using OpenWeather API with beautiful animated icons.</p>
+              <div class="project-tech">
+                <span>JS</span><span>API</span><span>CSS</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Contact <span class="accent">Me</span></h2>
+          <p class="section-subtitle">Let's work together!</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <p>Have a project in mind or just want to say hello? Feel free to reach out — I'll get back to you as soon as possible.</p>
+
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <span>Email</span>
+                <a href="mailto:you@email.com">techsaurabh0018@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <span>Phone</span>
+                <a href="tel:+1234567890">+91 7667901214</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <span>Location</span>
+                <p>New Delhi, India</p>
+              </div>
+            </div>
+
+            <div class="contact-socials">
+              <a href="https://github.com/techsaurabh08"   target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/techsaurabh0018/" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://x.com/Tiwari0018?t=nM_llh0DZd4U7Od8P63IKA&s=08"  target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Saurabh Tiwari" required />
+              <span class="error-msg" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="techsaurabh0018@gmail.com" required />
+              <span class="error-msg" id="email-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required />
+              <span class="error-msg" id="subject-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+              <span class="error-msg" id="message-error"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-success" id="form-success">
+              <i class="fas fa-check-circle"></i> Message sent successfully!
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Tech Saurabh. All rights reserved.</p>
+        <p>Designed & Built with <i class="fas fa-heart accent"></i> by <span class="accent">Saurabh Tiwari</span></p>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
