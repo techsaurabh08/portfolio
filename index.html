@@ -3,11 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="My Personal Portfolio" />
-    <title>My Portfolio</title>
+    <title>Saurabh Tiwari | Full Stack Developer</title>
+    <meta name="description" content="Portfolio of Saurabh Tiwari, a Full Stack Developer specializing in Python, Django, PHP, JavaScript, and database systems. Explore projects, skills, and background." />
+    <meta name="author" content="Saurabh Tiwari" />
 
-    <!-- Favicon (place your icon in assets/icons/) -->
-    <link rel="icon" type="image/png" href="assets/icons/favicon.png" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Saurabh Tiwari | Full Stack Developer" />
+    <meta property="og:description" content="Portfolio of Saurabh Tiwari, a Full Stack Developer specializing in Python, Django, PHP, JavaScript, and database systems." />
+
+    <!-- Twitter Meta -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Saurabh Tiwari | Full Stack Developer" />
+    <meta name="twitter:description" content="Portfolio of Saurabh Tiwari, a Full Stack Developer specializing in Python, Django, PHP, JavaScript, and database systems." />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,7 +35,7 @@
     />
 
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
@@ -37,21 +48,22 @@
         </a>
 
         <ul class="nav-menu" id="nav-menu">
-          <li><a href="#home"    class="nav-link">Home</a></li>
-          <li><a href="#about"   class="nav-link">About</a></li>
-          <li><a href="#skills"  class="nav-link">Skills</a></li>
-          <li><a href="#projects"class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#home"      class="nav-link">Home</a></li>
+          <li><a href="#about"     class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills"    class="nav-link">Skills</a></li>
+          <li><a href="#projects"  class="nav-link">Projects</a></li>
+          <li><a href="#contact"   class="nav-link">Contact</a></li>
         </ul>
 
         <div class="nav-actions">
           <!-- Dark / Light Mode Toggle -->
-          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle Theme">
             <i class="fas fa-moon" id="theme-icon"></i>
           </button>
 
           <!-- Hamburger Menu -->
-          <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+          <button class="hamburger" id="hamburger" type="button" aria-label="Toggle Menu" aria-expanded="false" aria-controls="nav-menu">
             <span></span>
             <span></span>
             <span></span>
@@ -60,7 +72,10 @@
       </div>
     </nav>
 
-    <!-- ===== HERO SECTION ===== -->
+    <!-- ===== MAIN CONTENT ===== -->
+    <main id="main-content">
+
+      <!-- ===== HERO SECTION ===== -->
     <section class="hero" id="home">
       <div class="hero-container">
         <div class="hero-text">
@@ -70,28 +85,24 @@
             I'm a <span class="typed-text" id="typed-text"></span><span class="cursor">|</span>
           </h2>
           <p class="hero-description">
-            A passionate developer crafting beautiful and functional web
-            experiences. I turn ideas into clean, scalable, and modern
-            solutions.
+            A passionate Full Stack Developer building robust web applications, dynamic backend systems, and responsive user experiences.
           </p>
           <div class="hero-buttons">
             <a href="#projects" class="btn btn-primary">View My Work</a>
-            <a href="assets/resume/Saurabh Resume.pdf" class="btn btn-secondary" target="_blank">
+            <a href="assets/resume/Saurabh Resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
               <i class="fas fa-download"></i> Download CV
             </a>
           </div>
           <div class="hero-socials">
-            <a href="https://github.com/techsaurabh08"    target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/techsaurabh0018/"  target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://x.com/Tiwari0018?t=nM_llh0DZd4U7Od8P63IKA&s=08"   target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="mailto:techsaurabh08@gmail.com"  aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/techsaurabh08" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/saurabh0018/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:techsaurabh0018@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
           </div>
         </div>
 
         <div class="hero-image">
           <div class="image-wrapper">
-            <!-- Place your photo in assets/images/profile.jpg -->
-            <img src="assets/images/saurabh new image.png" alt="Profile Photo" />
+            <img src="assets/images/saurabh-profile.webp" alt="Saurabh Tiwari - Full Stack Developer" width="380" height="380" fetchpriority="high" />
           </div>
           <!-- Floating Badges -->
           <div class="badge badge-1"><i class="fas fa-code"></i> Clean Code</div>
@@ -116,36 +127,64 @@
         <div class="about-grid">
           <div class="about-image">
             <div class="about-img-wrapper">
-              <img src="assets/images/saurabh new image.png" alt="About Me" />
+              <img src="assets/images/saurabh-profile.webp" alt="Saurabh Tiwari - Full Stack Developer" width="400" height="500" loading="lazy" />
             </div>
           </div>
 
           <div class="about-content">
             <h3>Who am I?</h3>
             <p>
-              I'm a passionate <strong>Frontend Developer</strong> with a
-              love for building modern, efficient, and user-friendly web
-              applications. I enjoy solving complex problems and learning new
-              technologies.
+              I'm a dedicated <strong>Full Stack Developer</strong> pursuing my Bachelor of Computer Applications (BCA) at Sandip University. I specialize in developing modern web applications with a strong foundation in Python, Django, PHP, and modern web technologies.
             </p>
             <p>
-              When I'm not coding, you'll find me exploring design trends,
-              contributing to open source, or enjoying a good cup of coffee
-              ☕.
+              I take pride in solving complex problems, writing clean code, and designing maintainable backend solutions that drive real-world impact.
             </p>
 
-            <div class="about-stats">
-              <div class="stat">
-                <span class="stat-number" data-target="5">0</span>+
-                <span class="stat-label">Projects Done</span>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fas fa-laptop-code"></i>
+                <div>
+                  <h4>Full Stack Development</h4>
+                  <p>Building responsive frontends and reliable backend services.</p>
+                </div>
               </div>
-              <div class="stat">
-                <span class="stat-number" data-target="15">0</span>+
-                <span class="stat-label">Happy Clients</span>
+              <div class="highlight-item">
+                <i class="fas fa-database"></i>
+                <div>
+                  <h4>Database & ERP Solutions</h4>
+                  <p>Architecting institutional and business management systems.</p>
+                </div>
               </div>
             </div>
 
             <a href="#contact" class="btn btn-primary">Let's Talk</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION SECTION ===== -->
+    <section class="education" id="education">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My <span class="accent">Education</span></h2>
+          <p class="section-subtitle">Academic background and qualifications</p>
+        </div>
+
+        <div class="education-grid">
+          <div class="education-card">
+            <div class="education-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="education-details">
+              <span class="education-period"><i class="far fa-calendar-alt"></i> 2023 &ndash; 2026</span>
+              <h3 class="education-degree">Bachelor of Computer Applications (BCA)</h3>
+              <h4 class="education-institution">Sandip University</h4>
+              <p class="education-dept">School of Computer Science &amp; Engineering</p>
+              <div class="education-score">
+                <span class="score-badge">CGPA: 8.24</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -156,75 +195,47 @@
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">My <span class="accent">Skills</span></h2>
-          <p class="section-subtitle">Technologies I work with</p>
+          <p class="section-subtitle">Technologies and tools I work with</p>
         </div>
 
-        <div class="skills-grid">
+        <div class="skills-container">
 
-          <!-- Skill Card -->
-          <div class="skill-card" data-aos="fade-up">
-            <div class="skill-icon"><i class="fab fa-html5"></i></div>
-            <h4>HTML5</h4>
-            <div class="skill-bar">
-              <div class="skill-fill" data-width="95"></div>
+          <!-- Category 1: Languages & Web Technologies -->
+          <div class="skill-category">
+            <h3 class="category-title"><i class="fas fa-code"></i> Languages &amp; Web Technologies</h3>
+            <div class="skill-tags">
+              <div class="skill-tag"><i class="fab fa-html5"></i> HTML5</div>
+              <div class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</div>
+              <div class="skill-tag"><i class="fab fa-js-square"></i> JavaScript</div>
+              <div class="skill-tag"><i class="fab fa-python"></i> Python (Basic)</div>
+              <div class="skill-tag"><i class="fab fa-php"></i> PHP</div>
             </div>
-            <span class="skill-percent">95%</span>
           </div>
 
-          <div class="skill-card" data-aos="fade-up">
-            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
-            <h4>CSS3</h4>
-            <div class="skill-bar">
-              <div class="skill-fill" data-width="90"></div>
+          <!-- Category 2: Frameworks & Backend -->
+          <div class="skill-category">
+            <h3 class="category-title"><i class="fas fa-server"></i> Frameworks &amp; Backend</h3>
+            <div class="skill-tags">
+              <div class="skill-tag"><i class="fas fa-cubes"></i> Django</div>
             </div>
-            <span class="skill-percent">90%</span>
           </div>
 
-          <div class="skill-card" data-aos="fade-up">
-            <div class="skill-icon"><i class="fab fa-js-square"></i></div>
-            <h4>JavaScript</h4>
-            <div class="skill-bar">
-              <div class="skill-fill" data-width="85"></div>
+          <!-- Category 3: Databases -->
+          <div class="skill-category">
+            <h3 class="category-title"><i class="fas fa-database"></i> Databases</h3>
+            <div class="skill-tags">
+              <div class="skill-tag"><i class="fas fa-database"></i> MySQL</div>
+              <div class="skill-tag"><i class="fas fa-table"></i> SQLite</div>
             </div>
-            <span class="skill-percent">85%</span>
           </div>
 
-          <div class="skill-card" data-aos="fade-up">
-            <div class="skill-icon"><i class="fab fa-react"></i></div>
-            <h4>React</h4>
-            <div class="skill-bar">
-              <div class="skill-fill" data-width="80"></div>
+          <!-- Category 4: Tools & Version Control -->
+          <div class="skill-category">
+            <h3 class="category-title"><i class="fas fa-tools"></i> Tools &amp; Version Control</h3>
+            <div class="skill-tags">
+              <div class="skill-tag"><i class="fab fa-git-alt"></i> Git</div>
+              <div class="skill-tag"><i class="fab fa-github"></i> GitHub</div>
             </div>
-            <span class="skill-percent">80%</span>
-          </div>
-
-          <div class="skill-card" data-aos="fade-up">
-            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
-            <h4>Node.js</h4>
-            <div class="skill-bar">
-              <div class="skill-fill" data-width="75"></div>
-            </div>
-            <span class="skill-percent">75%</span>
-          </div>
-
-          <div class="skill-card" data-aos="fade-up">
-            <div class="skill-icon"><i class="fas fa-database"></i></div>
-            <h4>MongoDB</h4>
-            <div class="skill-bar">
-              <div class="skill-fill" data-width="70"></div>
-            </div>
-            <span class="skill-percent">70%</span>
-          </div>
-
-         
-
-          <div class="skill-card" data-aos="fade-up">
-            <div class="skill-icon"><i class="fab fa-github"></i></div>
-            <h4>GitHub</h4>
-            <div class="skill-bar">
-              <div class="skill-fill" data-width="72"></div>
-            </div>
-            <span class="skill-percent">85%</span>
           </div>
 
         </div>
@@ -236,91 +247,71 @@
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">My <span class="accent">Projects</span></h2>
-          <p class="section-subtitle">Some things I have built</p>
+          <p class="section-subtitle">Real-world applications and management systems</p>
         </div>
 
         <!-- Filter Buttons -->
-        <div class="project-filters">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="frontend">Frontend</button>
-          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
-          <button class="filter-btn" data-filter="design">Design</button>
+        <div class="project-filters" role="group" aria-label="Filter Projects">
+          <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All Projects</button>
+          <button class="filter-btn" type="button" data-filter="ecommerce" aria-pressed="false">E-commerce</button>
+          <button class="filter-btn" type="button" data-filter="erp" aria-pressed="false">ERP Systems</button>
         </div>
 
         <div class="projects-grid" id="projects-grid">
 
-          <!-- Project Card 1 -->
-          <div class="project-card" data-category="frontend">
+          <!-- Project Card 1: DUSKK -->
+          <div class="project-card" data-category="ecommerce">
             <div class="project-img">
-              <img src="assets/images/project1.jpg" alt="Project 1" />
+              <img src="assets/images/projects/duskk.png" alt="DUSKK Jewelry E-commerce Website" width="600" height="338" loading="lazy" />
               <div class="project-overlay">
-                <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.duskk.in/" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Visit DUSKK Live Site"><i class="fas fa-external-link-alt"></i></a>
               </div>
             </div>
             <div class="project-info">
-              <span class="project-tag">Frontend</span>
-              <h3>E-Commerce UI</h3>
-              <p>A fully responsive e-commerce interface built with HTML, CSS, and JavaScript.</p>
+              <span class="project-tag">E-commerce</span>
+              <h3>DUSKK – Jewelry E-commerce Website</h3>
+              <p>A modern e-commerce storefront for fine jewelry with an intuitive shopping experience, product catalog, and responsive checkout.</p>
               <div class="project-tech">
-                <span>HTML</span><span>CSS</span><span>JS</span>
+                <span>Next.js</span><span>Prisma</span><span>SQLite</span>
               </div>
             </div>
           </div>
 
-          <!-- Project Card 2 -->
-          <div class="project-card" data-category="fullstack">
+          <!-- Project Card 2: Edsphare -->
+          <div class="project-card" data-category="erp">
             <div class="project-img">
-              <img src="assets/images/project2.jpg" alt="Project 2" />
+              <img src="assets/images/projects/Screenshot 2026-07-20 143413.png" alt="Edsphare ERP Management System Dashboard" width="600" height="338" loading="lazy" />
               <div class="project-overlay">
-                <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/techsaurabh08/edusphare-erp" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View Edsphare GitHub Repository"><i class="fab fa-github"></i></a>
               </div>
             </div>
             <div class="project-info">
-              <span class="project-tag">Full Stack</span>
-              <h3>Task Manager App</h3>
-              <p>A full-stack task management app with authentication and real-time updates.</p>
+              <span class="project-tag">ERP System</span>
+              <h3>Edsphare – ERP Management System</h3>
+              <p>A role-based educational ERP platform supporting student registration, attendance tracking, fee management, room allocation, complaints, and administrative reports.</p>
               <div class="project-tech">
-                <span>React</span><span>Node.js</span><span>MongoDB</span>
+                <span>Python</span><span>Django</span><span>SQLite</span>
               </div>
             </div>
           </div>
 
-          <!-- Project Card 3 -->
-          <div class="project-card" data-category="design">
+          <!-- Project Card 3: Edumantra -->
+          <div class="project-card" data-category="erp">
             <div class="project-img">
-              <img src="assets/images/project3.jpg" alt="Project 3" />
+              <div class="project-placeholder">
+                <i class="fas fa-university placeholder-icon"></i>
+                <span class="placeholder-title">Edumantra</span>
+              </div>
               <div class="project-overlay">
-                <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/techsaurabh08/Edumantra-ERP" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View Edumantra GitHub Repository"><i class="fab fa-github"></i></a>
               </div>
             </div>
             <div class="project-info">
-              <span class="project-tag">Design</span>
-              <h3>Travel App UI</h3>
-              <p>A sleek travel app UI design created in Figma and translated to code.</p>
+              <span class="project-tag">ERP System</span>
+              <h3>Edumantra – Management System</h3>
+              <p>A comprehensive institutional management system built to streamline administrative workflows, student records, and operational reporting.</p>
               <div class="project-tech">
-                <span>Figma</span><span>HTML</span><span>CSS</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project Card 4 -->
-          <div class="project-card" data-category="frontend">
-            <div class="project-img">
-              <img src="assets/images/project4.jpg" alt="Project 4" />
-              <div class="project-overlay">
-                <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
-              </div>
-            </div>
-            <div class="project-info">
-              <span class="project-tag">Frontend</span>
-              <h3>Weather Dashboard</h3>
-              <p>A weather app using OpenWeather API with beautiful animated icons.</p>
-              <div class="project-tech">
-                <span>JS</span><span>API</span><span>CSS</span>
+                <span>PHP</span><span>MySQL</span>
               </div>
             </div>
           </div>
@@ -341,22 +332,16 @@
 
           <div class="contact-info">
             <h3>Get In Touch</h3>
-            <p>Have a project in mind or just want to say hello? Feel free to reach out — I'll get back to you as soon as possible.</p>
+            <p>Have a project in mind or want to collaborate? Send a message through the form or reach out directly via email, GitHub, or LinkedIn.</p>
 
             <div class="contact-item">
               <i class="fas fa-envelope"></i>
               <div>
                 <span>Email</span>
-                <a href="mailto:you@email.com">techsaurabh0018@gmail.com</a>
+                <a href="mailto:techsaurabh0018@gmail.com">techsaurabh0018@gmail.com</a>
               </div>
             </div>
-            <div class="contact-item">
-              <i class="fas fa-phone"></i>
-              <div>
-                <span>Phone</span>
-                <a href="tel:+1234567890">+91 7667901214</a>
-              </div>
-            </div>
+
             <div class="contact-item">
               <i class="fas fa-map-marker-alt"></i>
               <div>
@@ -366,44 +351,60 @@
             </div>
 
             <div class="contact-socials">
-              <a href="https://github.com/techsaurabh08"   target="_blank"><i class="fab fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/techsaurabh0018/" target="_blank"><i class="fab fa-linkedin"></i></a>
-              <a href="https://x.com/Tiwari0018?t=nM_llh0DZd4U7Od8P63IKA&s=08"  target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://github.com/techsaurabh08" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/saurabh0018/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
             </div>
           </div>
 
           <form class="contact-form" id="contact-form" novalidate>
             <div class="form-group">
               <label for="name">Full Name</label>
-              <input type="text" id="name" name="name" placeholder="Saurabh Tiwari" required />
-              <span class="error-msg" id="name-error"></span>
+              <input type="text" id="name" name="name" placeholder="Your Full Name" required aria-describedby="name-error" />
+              <span class="error-msg" id="name-error" role="alert"></span>
             </div>
             <div class="form-group">
               <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="techsaurabh0018@gmail.com" required />
-              <span class="error-msg" id="email-error"></span>
+              <input type="email" id="email" name="email" placeholder="your.email@example.com" required aria-describedby="email-error" />
+              <span class="error-msg" id="email-error" role="alert"></span>
             </div>
             <div class="form-group">
               <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required />
-              <span class="error-msg" id="subject-error"></span>
+              <input type="text" id="subject" name="subject" placeholder="Project Inquiry / Opportunity" required aria-describedby="subject-error" />
+              <span class="error-msg" id="subject-error" role="alert"></span>
             </div>
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
-              <span class="error-msg" id="message-error"></span>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required aria-describedby="message-error"></textarea>
+              <span class="error-msg" id="message-error" role="alert"></span>
             </div>
+
+            <p class="form-note">
+              <i class="fas fa-info-circle"></i> Clicking Send Message opens your default email application with your pre-filled message ready to review and send.
+            </p>
+
             <button type="submit" class="btn btn-primary btn-full">
               <i class="fas fa-paper-plane"></i> Send Message
             </button>
-            <div class="form-success" id="form-success">
-              <i class="fas fa-check-circle"></i> Message sent successfully!
+
+            <!-- Feedback Notice & Fallback Container -->
+            <div class="form-notice" id="form-notice" role="status" aria-live="polite">
+              <div class="notice-header">
+                <i class="fas fa-info-circle"></i>
+                <span>Action Required: Send from Your Email App</span>
+              </div>
+              <p class="notice-desc">
+                Your email application should open with your message prepared. Please review it and click Send. If it doesn't open, use the fallback email link below.
+              </p>
+              <p class="notice-fallback">
+                Fallback: <a href="#" id="mailto-fallback-link" class="fallback-link">Click here to open mail client</a> or write directly to <a href="mailto:techsaurabh0018@gmail.com" class="fallback-email">techsaurabh0018@gmail.com</a>.
+              </p>
             </div>
           </form>
 
         </div>
       </div>
     </section>
+    </main>
 
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
@@ -419,6 +420,6 @@
     </button>
 
     <!-- Main JavaScript -->
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
